@@ -16,8 +16,8 @@ public class Garage {
 
 
     public void addGarage(Cars cars, Oner oner) {
-         boolean isExist = garage.containsKey(cars);
-           if (isExist==false) {
+//         boolean isExist = garage.containsKey(cars);
+           if (garage.containsKey(cars)==false) {
             garage.put(cars, oner);
             System.out.println("Add Car " + cars.getRegNum() + " To Garage");
         } else {
